@@ -127,7 +127,7 @@
   .intro .right p{font-size:1.12rem;color:#3a4258;margin-bottom:18px}
 
   /* ---------- PROGRAMMES (numbered list) ---------- */
-  .prog{padding:48px 0;color:#fff;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(12,18,38,.88),rgba(8,69,60,.82)),url('assets/IMG_1113.PNG') center/cover no-repeat}
+  .prog{padding:48px 0;color:#fff;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(12,18,38,.92),rgba(8,69,60,.88)),url('assets/Image Closing.jpg') center/cover no-repeat}
   .prog::before{content:"";position:absolute;inset:0;z-index:0;background-image:radial-gradient(rgba(255,255,255,.05) 1.4px,transparent 1.4px);background-size:22px 22px;pointer-events:none}
   .prog .wrap{position:relative;z-index:1}
   .prog .sec-head{max-width:560px;margin-bottom:40px}
