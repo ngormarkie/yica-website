@@ -1,0 +1,6 @@
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+assets/news_extract/
+assets/News.docx

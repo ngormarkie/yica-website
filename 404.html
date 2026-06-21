@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — YICA-SL</title>
+<meta name="description" content="The page you're looking for could not be found.">
+<link rel="icon" type="image/png" href="assets/YICA-Logo-png-final.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .nf{min-height:80vh;display:grid;place-items:center;text-align:center;padding:60px 24px;
+      background:radial-gradient(circle at 50% 0%,rgba(58,168,67,.14),transparent 55%),var(--paper)}
+  .nf .code{font-family:'Space Grotesk';font-weight:700;font-size:clamp(4rem,14vw,8rem);line-height:1;
+      background:linear-gradient(120deg,var(--teal),var(--lime));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nf h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin:10px 0 12px}
+  .nf p{color:#4a5168;max-width:42ch;margin:0 auto 26px}
+</style>
+</head>
+<body>
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="left"><a href="mailto:info@yica-sl.org">info@yica-sl.org</a></div>
+    <div class="socials"><a href="https://www.instagram.com/yicasalone" target="_blank">Instagram</a><a href="https://www.facebook.com/yicasalone" target="_blank">Facebook</a><a href="https://www.linkedin.com/company/yicasalone" target="_blank">LinkedIn</a><a href="https://www.tiktok.com/@yica_salone" target="_blank">TikTok</a></div>
+  </div>
+</div>
+<!-- NAV -->
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="index.html"><img src="assets/YICA-Logo-png-final.png" alt="YICA-SL logo"></a>
+      <div class="navlinks" id="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#programmes">Programmes</a>
+        <a href="team.html">Team</a>
+        <a href="index.html#impact">Impact</a>
+        <a href="index.html#involve">Get Involved</a>
+      </div>
+      <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="nf">
+  <div>
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or may have moved. Let's get you back on track.</p>
+    <a href="index.html" class="btn btn-lime btn-round">Back to home →</a>
+  </div>
+</section>
+
+<script>
+  const toggle=document.getElementById('toggle'),nav=document.getElementById('nav');
+  toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
