@@ -295,7 +295,7 @@
 .page-hero h1{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:800;max-width:20ch}
 .page-hero p{color:rgba(255,255,255,.85);font-size:1.12rem;max-width:54ch;margin-top:16px}
 .page-hero .tag{display:inline-block;background:var(--lime);color:var(--ink);font-family:'Space Grotesk';font-weight:700;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;padding:6px 14px;border-radius:3px;margin-bottom:18px}
-.page-hero.hero-mentorship{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Concrete Actions/Mentorship.JPG') center/cover no-repeat}
+.page-hero.hero-mentorship{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Slider - 5.jpg') center/cover no-repeat}
 .page-hero.hero-restoration{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Concrete Actions/Kono.jpg') center/cover no-repeat}
 .page-hero.hero-policy{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Concrete Actions/World Mayors Summit.jpg') center/cover no-repeat}
 .page-hero.hero-gardens{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Concrete Actions/School garden.PNG') center/cover no-repeat}
