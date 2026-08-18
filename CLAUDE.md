@@ -11,7 +11,11 @@ output is exactly the source files.
 - Multi-page static site. Each page is a standalone `.html` file that repeats
   its own `<header>`/`<footer>` inline — there is no templating, so a nav or
   footer change must be applied to every page individually.
-- All pages share `styles.css` (linked, not inlined).
+- All pages share `styles.css` (linked, not inlined), loaded via
+  `styles.css?v=YYYYMMDD` on every page. **Bump that version string on every
+  CSS-only change** — browsers/CDNs cache `.css` more aggressively than
+  `.html`, so a CSS edit can redeploy successfully and still not show up for
+  visitors until the query string changes.
 - Logos live at `assets/YICA-Logo-png-final.png` (header/favicon) and
   `assets/YICA Logo white.png` (footer/splash, white variant).
 - Pages link to each other with relative paths (e.g. `href="team.html"`).
