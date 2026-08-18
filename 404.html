@@ -33,10 +33,26 @@
     <nav>
       <a class="brand" href="index.html"><img src="assets/YICA-Logo-png-final.png" alt="YICA-SL logo"></a>
       <div class="navlinks" id="nav">
-        <a href="index.html#about">About</a>
+        <a href="index.html">Home</a>
+        <div class="nav-drop">
+          <a href="index.html#about" class="has-sub">About <span class="caret">&#9662;</span></a>
+          <div class="sub-menu">
+            <a href="about.html">Who We Are</a><a href="team.html">Team</a>
+            <a href="index.html#impact">Impact</a>
+          </div>
+        </div>
         <a href="index.html#programmes">Programmes</a>
-        <a href="team.html">Team</a>
-        <a href="index.html#impact">Impact</a>
+        <div class="nav-drop">
+          <a href="resources.html" class="has-sub">Resources <span class="caret">&#9662;</span></a>
+          <div class="sub-menu">
+            <a href="news.html">News</a>
+            <a href="resources-reports.html">Reports</a>
+            <a href="resources-policy-positions.html">Policy Positions</a>
+            <a href="resources-climate-policies.html">Climate Policies</a>
+            <a href="resources-press-releases.html">Press Releases</a>
+            <a href="resources-opportunities.html">Youth Climate Opportunities</a>
+          </div>
+        </div>
         <a href="index.html#involve">Get Involved</a>
       </div>
       <button class="menu-toggle" id="toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -56,7 +72,7 @@
 <script>
   const toggle=document.getElementById('toggle'),nav=document.getElementById('nav');
   toggle.addEventListener('click',()=>nav.classList.toggle('open'));
-  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  document.querySelectorAll('.nav-drop > .has-sub').forEach(a=>{a.addEventListener('click',function(e){if(window.innerWidth<=960){if(!this.parentElement.classList.contains('open')){e.preventDefault();e.stopPropagation();this.parentElement.classList.toggle('open');}}});});nav.querySelectorAll('a:not(.has-sub)').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 </script>
 </body>
 </html>

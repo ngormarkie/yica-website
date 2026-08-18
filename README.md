@@ -12,21 +12,41 @@ A static website built with plain HTML and CSS (no build step, no framework). It
 
 ```
 yica-website/
-├── index.html                    # Home page (slider, about, problem, programmes, impact, partners)
-├── team.html                     # Our Team
-├── programme-mentorship.html     # Young Women Climate Mentorship
-├── programme-restoration.html    # Community-Based Restoration & CEEComs
-├── programme-policy.html         # National Policy Engagement
-├── programme-gardens.html        # School Gardens & Capacity Building
-├── styles.css                    # All shared styling + animations
-├── 404.html                      # Not-found page
+├── index.html                          # Home (slider, about, problem, programmes, impact, partners)
+├── about.html                          # Who We Are (mission, vision, approach, values)
+├── team.html                           # Our Team
+├── contact.html                        # Contact form (mailto:) + details
+├── volunteer.html                      # Volunteer application form (mailto:)
+├── programme-mentorship.html           # Young Women Climate Mentorship
+├── programme-restoration.html          # Community-Based Restoration & CEEComs
+├── programme-policy.html               # National Policy Engagement
+├── programme-gardens.html              # NatureUp School Gardens & Capacity Building
+├── news.html                           # News & Updates index
+├── news-*.html                         # Individual news articles (5)
+├── resources.html                      # Resources hub
+├── resources-reports.html              # Annual/programme reports
+├── resources-policy-positions.html     # YICA-SL's own policy position papers
+├── resources-climate-policies.html     # National/international policy library (NDCs, NAP, BUR)
+├── resources-press-releases.html       # Press releases (placeholder — none posted yet)
+├── resources-opportunities.html        # Youth climate opportunities (placeholder — none posted yet)
+├── styles.css                          # All shared styling + animations
+├── 404.html                            # Not-found page
 ├── assets/
-│   └── yica-logo.jpg             # Logo (used in header and footer)
+│   ├── YICA-Logo-png-final.png         # Logo (header/favicon)
+│   ├── YICA Logo white.png             # Logo (footer/splash, white variant)
+│   ├── Documents/                      # PDFs linked from the Resources pages
+│   ├── news/                           # News article photos
+│   ├── Team/                           # Team headshots
+│   ├── Partner logos/                  # Partner/funder marquee logos
+│   ├── Concrete Actions/               # Homepage "concrete actions" story photos
+│   └── YCC Sierra Leone Launch Photos/ # Photos for the YCC launch article
 └── README.md
 ```
 
 All pages share `styles.css` and link to each other with relative paths, so the
 folder is fully portable — open `index.html` in any browser to preview locally.
+Every page repeats its own `<header>`/`<footer>` markup inline (there's no
+templating), so any nav or footer change has to be applied to every page.
 
 ## Local preview
 
@@ -64,8 +84,12 @@ There is no build step. The files served are exactly the files in this folder.
 
 ## To do (suggested next steps)
 
-- [ ] Replace placeholder images with real photos
-- [ ] Add real social media links (currently `#` in the top bar and footer)
-- [ ] Build an About page and a Contact page
-- [ ] Add Open Graph / social share image
-- [ ] Confirm impact figures are accurate before going live
+- [ ] Wire up real form submission for `contact.html` and `volunteer.html` — both
+      currently just build a `mailto:` link and hand off to the visitor's mail
+      client, so a submission can silently go nowhere if none is configured
+      and nothing is stored anywhere.
+- [ ] Populate `resources-press-releases.html` and `resources-opportunities.html`
+      — both are placeholder pages ("will be posted here soon").
+- [ ] Add real social media links where any `#` hrefs remain.
+- [ ] Add Open Graph / social share image.
+- [ ] Confirm impact figures are accurate before going live.
