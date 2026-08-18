@@ -299,11 +299,7 @@
 .page-hero.hero-restoration{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Concrete Actions/Kono.jpg') center/cover no-repeat}
 .page-hero.hero-policy{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Slider - 4.jpg') center/cover no-repeat}
 .page-hero.hero-gardens{background:linear-gradient(135deg,rgba(8,69,60,.85),rgba(12,107,93,.75)),url('assets/Concrete Actions/School garden.PNG') center/cover no-repeat}
-
-/* article hero photo (news pages): sits right under the page-hero, gradient bleeding down from it */
-.article-hero-photo{position:relative;height:clamp(240px,40vw,420px);overflow:hidden}
-.article-hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.article-hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,38,.7) 0%,rgba(12,18,38,.15) 55%,rgba(12,18,38,0) 100%)}
+.page-hero.hero-training-day1{background:linear-gradient(135deg,rgba(8,69,60,.82),rgba(12,107,93,.72)),url('assets/news/Mentorship Day 1 News/Photos/IMG_6235.jpg') center/cover no-repeat}
 
 /* prose content */
 .prose{padding:44px 0}
